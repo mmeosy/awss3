@@ -24,3 +24,7 @@ jobs:
           run:|
           echo hey i started a deployment
           aws s3api list-buckets
+          
+          aws s3 cp index.html s3://mylilya1/index.html
+          
+          ws s3api put-object-acl --bucket mylilya1 --key index.html --acl public-read
