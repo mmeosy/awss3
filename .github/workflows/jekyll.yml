@@ -21,9 +21,9 @@ jobs:
           echo Hey I startet a deployment        
           aws s3api list-buckets
           
-          aws s3 cp index.html s3://mylilya1/index.html
+          aws s3 cp index.html s3://mylilya2/index.html textfile11
           
-          aws s3api put-object-acl --bucket mylilya1 --key index.html --acl public-read
+          aws s3api put-object-acl --bucket mylilya2 --key index.html --acl public-read
           
           
           
